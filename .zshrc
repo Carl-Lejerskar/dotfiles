@@ -1,7 +1,6 @@
 alias {py,python}="python3"
 # note: for plain vim just do /vim 
-alias v="nvim"
-alias vim="nvim"
+alias {v,n,vim}="nvim"
 alias edity="vim ~/.config/yabai/yabairc"
 alias starty="brew services start yabai"
 alias starts="brew services start skhd"
