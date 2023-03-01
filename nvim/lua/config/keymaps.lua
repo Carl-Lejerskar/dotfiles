@@ -18,6 +18,7 @@ end
 -- Move to window using the <shift> hjkl keys
 map("n", "<S-h>", "<C-w>h", { desc = "Go to left window" })
 map("n", "<S-l>", "<C-w>l", { desc = "Go to right window" })
+map("n", "<S-k>", "<C-w>k", { desc = "Go to upper window" })
 
 if Util.has("bufferline.nvim") then
   map("n", "<S-j>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buffer" })
