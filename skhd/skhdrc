@@ -1,0 +1,107 @@
+## NOTE: Using ctrl key as modifier as hhkb-like formats replace
+# capslock w/ ctrl, so it is easily accessible
+ 
+# Shortcuts
+# # vpn
+ctrl + cmd - c: /usr/local/bin/mullvad connect 
+ctrl + cmd - d: /usr/local/bin/mullvad disconnect 
+# # logitech daemon
+ctrl + alt + cmd - k : killall 'LogiMgrDaemon'
+# # browsers, terminals
+ctrl + shift - return : open -a "Firefox Nightly"
+ctrl - return : /opt/homebrew/bin/kitty
+# # frustration
+ctrl + cmd - q: open ~/Applications/quit.app 
+# # iMessage
+ctrl + cmd - m: open /System/Applications/Messages.app
+# # turn off tv
+shift + ctrl - q: pmset sleepnow; /Users/carl/lgtv-venv/bin/lgtv tv off
+
+
+# Navigation
+ctrl - h : yabai -m window --focus west
+ctrl - j : yabai -m window --focus south
+ctrl - k : yabai -m window --focus north
+ctrl - l : yabai -m window --focus east
+
+# Moving windows
+shift + ctrl - h : yabai -m window --warp west
+shift + ctrl - j : yabai -m window --warp south
+shift + ctrl - k : yabai -m window --warp north
+shift + ctrl - l : yabai -m window --warp east
+
+# Move focus container to workspace
+shift + alt - 1 : yabai -m window --space 1
+shift + alt - 2 : yabai -m window --space 2
+shift + alt - 3 : yabai -m window --space 3
+shift + alt - 4 : yabai -m window --space 4
+shift + alt - 5 : yabai -m window --space 5
+
+
+# Resize windows
+ctrl + alt - h : \
+    yabai -m window --resize left:-100:0 ; \
+    yabai -m window --resize right:-100:0
+
+ctrl + alt - j : \
+    yabai -m window --resize bottom:0:100 ; \
+    yabai -m window --resize top:0:100
+
+ctrl + alt - k : \
+    yabai -m window --resize top:0:-100 ; \
+    yabai -m window --resize bottom:0:-100
+
+ctrl + alt - l : \
+    yabai -m window --resize right:100:0 ; \
+    yabai -m window --resize left:100:0
+
+# Float and center window
+shift + alt - c : yabai -m window --toggle float;\
+                yabai -m window --grid 4:4:1:1:2:2
+
+# Set insertion point for focused container
+shift + ctrl + alt - h : yabai -m window --insert west
+shift + ctrl + alt - j : yabai -m window --insert south
+shift + ctrl + alt - k : yabai -m window --insert north
+shift + ctrl + alt - l : yabai -m window --insert east
+
+# Float / Unfloat window
+shift + alt - space : yabai -m window --toggle float
+
+# Make fullscreen
+ctrl - f : yabai -m window --toggle zoom-fullscreen
+
+# Change desktop
+ctrl - 1 : yabai -m query --spaces --space 1 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+ctrl - 2 : yabai -m query --spaces --space 2 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+ctrl - 3 : yabai -m query --spaces --space 3 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+ctrl - 4 : yabai -m query --spaces --space 4 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+ctrl - 5 : yabai -m query --spaces --space 5 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+
+# change orientation
+ctrl - e : yabai -m space --rotate 90
+
+#restart yabai
+ctrl + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+
+#change padding
+
+#border padding
+ctrl + alt - i: yabai -m space --padding rel:10:10:10:10
+ctrl + alt - o: yabai -m space --padding rel:-10:-10:-10:-10
+
+#gap padding
+ctrl + cmd - i: yabai -m space --gap rel:10
+ctrl + cmd - o: yabai -m space --gap rel:-10
+
+
+#make a smaller desktop
+ctrl + cmd - s: yabai -m space --padding abs:300:50:200:200
+ctrl + cmd - w: yabai -m space --padding abs:450:25:25:25
+ctrl + cmd - u: yabai -m space --padding abs:10:450:50:50
+
+#reset desktop
+#ctrl + cmd - a: yabai -m space --padding abs:30:30:30:30
+ctrl + cmd - a: yabai -m space --padding abs:0:0:0:0 --gap abs:0
+
+
