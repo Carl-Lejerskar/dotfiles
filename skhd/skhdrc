@@ -8,8 +8,8 @@ ctrl + cmd - d: /usr/local/bin/mullvad disconnect
 # # logitech daemon
 ctrl + alt + cmd - k : killall 'LogiMgrDaemon'
 # # browsers, terminals
-ctrl + shift - return : open -a "Firefox Nightly"
-ctrl - return : /opt/homebrew/bin/kitty
+ctrl + shift - return : open -a "Firefox"
+ctrl - return : /opt/homebrew/bin/alacritty
 # # frustration
 ctrl + alt - q: open ~/Applications/quit.app 
 # # iMessage
