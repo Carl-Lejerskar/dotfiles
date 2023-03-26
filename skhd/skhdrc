@@ -11,7 +11,7 @@ ctrl + alt + cmd - k : killall 'LogiMgrDaemon'
 ctrl + shift - return : open -a "Firefox Nightly"
 ctrl - return : /opt/homebrew/bin/kitty
 # # frustration
-ctrl + cmd - q: open ~/Applications/quit.app 
+ctrl + alt - q: open ~/Applications/quit.app 
 # # iMessage
 ctrl + cmd - m: open /System/Applications/Messages.app
 # # turn off tv
@@ -56,7 +56,7 @@ ctrl + alt - l : \
     yabai -m window --resize left:100:0
 
 # Float and center window
-shift + alt - c : yabai -m window --toggle float;\
+ctrl + cmd - f : yabai -m window --toggle float;\
                 yabai -m window --grid 4:4:1:1:2:2
 
 # Set insertion point for focused container
