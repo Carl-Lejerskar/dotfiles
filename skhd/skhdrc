@@ -8,8 +8,9 @@ ctrl + cmd - d: /usr/local/bin/mullvad disconnect
 # # logitech daemon
 ctrl + alt + cmd - k : killall 'LogiMgrDaemon'
 # # browsers, terminals
-ctrl + shift - return : open -a "Firefox"
-ctrl - return : /opt/homebrew/bin/alacritty
+ctrl + shift - return : open -a "Mullvad Browser"
+ctrl - return : open -a "Alacritty"
+
 # # frustration
 ctrl + alt - q: open ~/Applications/quit.app 
 # # iMessage
@@ -98,7 +99,7 @@ ctrl + cmd - o: yabai -m space --gap rel:-10
 #make a smaller desktop
 ctrl + cmd - s: yabai -m space --padding abs:600:100:300:300
 ctrl + cmd - w: yabai -m space --padding abs:450:25:25:25
-ctrl + cmd - u: yabai -m space --padding abs:10:450:50:50
+ctrl + cmd - u: yabai -m space --padding abs:10:750:50:50
 
 #reset desktop
 #ctrl + cmd - a: yabai -m space --padding abs:30:30:30:30
