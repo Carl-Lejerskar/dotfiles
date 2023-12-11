@@ -8,7 +8,7 @@ ctrl + cmd - d: /usr/local/bin/mullvad disconnect
 # # logitech daemon
 ctrl + alt + cmd - k : killall 'LogiMgrDaemon'
 # # browsers, terminals
-ctrl + shift - return : open -a "Mullvad Browser"
+ctrl + shift - return : open -a "Firefox"
 ctrl - return : open -a "Alacritty"
 
 # # frustration
@@ -88,18 +88,18 @@ ctrl + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 #change padding
 
 #border padding
-ctrl + alt - i: yabai -m space --padding rel:10:10:10:10
-ctrl + alt - o: yabai -m space --padding rel:-10:-10:-10:-10
+ctrl + cmd - i: yabai -m space --padding rel:10:10:10:10
+ctrl + cmd - o: yabai -m space --padding rel:-10:-10:-10:-10
 
 #gap padding
-ctrl + cmd - i: yabai -m space --gap rel:10
-ctrl + cmd - o: yabai -m space --gap rel:-10
+#ctrl + cmd - i: yabai -m space --gap rel:10
+#ctrl + cmd - o: yabai -m space --gap rel:-10
 
 
 #make a smaller desktop
-ctrl + cmd - s: yabai -m space --padding abs:600:100:300:300
+ctrl + cmd - s: yabai -m space --padding abs:350:250:200:200
 ctrl + cmd - w: yabai -m space --padding abs:450:25:25:25
-ctrl + cmd - u: yabai -m space --padding abs:10:750:50:50
+ctrl + cmd - u: yabai -m space --padding abs:10:350:50:50
 
 #reset desktop
 #ctrl + cmd - a: yabai -m space --padding abs:30:30:30:30
