@@ -8,3 +8,4 @@ checker = {
   notify = false, -- get a notification when new updates are found
   frequency = 0, -- check for updates every hour
 }
+require("plugins.extras.lang.python")
